@@ -18,8 +18,6 @@ fun main() {
     println("After Doing     number *= 2      value is number is:     $number")
     number /= 2
     println("After Doing     number /= 2      value is number is:     $number")
-
-    val members = listOf(5)
-
+    
 
     }
