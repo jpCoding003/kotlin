@@ -34,5 +34,4 @@ fun main(){
     sub(x,y,z)
     multi(x,y,z)
     div(x.toDouble(),y.toDouble(),z.toDouble())
-
 }
