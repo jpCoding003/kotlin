@@ -10,4 +10,7 @@ fun main() {
 
     if (str1?.let { isPalindrom(it) } == true) println("The string is Palindrom")
     else println("The string is not Palindrom")
+
+
+
 }

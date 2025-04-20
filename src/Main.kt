@@ -3,7 +3,7 @@ fun add( x:Int ,y: Int) {
 
         val a = x+y
     println("We are in outer functio!!!")
-    println("Addition of two number ${x} & ${y}: $a")
+    println("Addition of two number $x & $y: $a")
 
     }
 
