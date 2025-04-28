@@ -21,7 +21,7 @@ fun leapYear(year: Int) {
 
 fun check(ch:String){
     when(ch){
-        "a", "e", "i", "o", "u", "A","E","I","O","U" -> println(" The Entered Character $ch is \" Vowel \"...")
+        "a", "e", "i", "o", "u", "A", "E", "I", "O", "U" -> println(" The Entered Character $ch is \" Vowel \"...")
         else -> println(" The Entered Character is \" Consonant \"...")
     }
 }
