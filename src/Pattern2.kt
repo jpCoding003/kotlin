@@ -8,4 +8,15 @@ fun main(){
             }                                              //  * *             // here two loops are not combine to create this patter!!!!!!!
             println()                                      //  *               // Patter is created in a single loop operation !!!!!!
     }
+
+    for (i in 0..7){
+        for (j in 0..i){
+            if (j==0 || j==i  ){
+                print("*")
+            }else{
+                print(" ")
+            }
+        }
+        println()
+    }
 }
