@@ -9,12 +9,16 @@ fun main(){
             println()                                      //  *               // Patter is created in a single loop operation !!!!!!
     }
 
+    println("\n\n\n")
+    var a =0
     for (i in 0..7){
         for (j in 0..i){
-            if (j==0 || j==i  ){
-                print("*")
+            if (j==0 || j==i || i==7  ){
+                print("  * ")
+
             }else{
-                print(" ")
+                print(" $a")
+                a++
             }
         }
         println()
