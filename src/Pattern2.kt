@@ -1,9 +1,9 @@
 fun main(){
-    val n =3
-    for (i in 0..2*n){                               //  *
+    val n =5
+    for (i in 1..2*n){                               //  *
      //   var value = i>n ? (2*n)-i-1 : n                  //  * *
-        var value = if (i>n){(2*n)-i} else{i}              //  * * *
-            for (j in 0..value) {                    //  * * * *         // Using Double Loop
+        var value = if (i>n){(2*n)-i-1} else{i}              //  * * *
+            for (j in 1..value) {                    //  * * * *         // Using Double Loop
                 print("*")                                 //  * * *
             }                                              //  * *             // here two loops are not combine to create this patter!!!!!!!
             println()                                      //  *               // Patter is created in a single loop operation !!!!!!
@@ -21,6 +21,20 @@ fun main(){
                 a++
             }
         }
-        println()
     }
+    println()
+
+     for (i in 1..n){
+         for (j in 1..(n-i)){          //     1
+             print(" ")                      //    212
+         }                                   //   32123
+         for (j in i downTo 1){        //  4321234
+             print(j)                        // 543212345
+         }
+         for (j in 2..i){
+             print(j)
+         }
+         println()
+     }
+
 }
