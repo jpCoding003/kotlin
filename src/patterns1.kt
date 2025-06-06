@@ -15,6 +15,10 @@ fun main(){
         }
         println()
     }
+    println()
+    println()
+    println()
+
 
     for (i in 1..n){
         for (j in n downTo i){
