@@ -25,6 +25,7 @@ fun main(){
         println()
     }
 
+
     num = 1
     for (i in 1..n){
 

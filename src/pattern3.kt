@@ -24,6 +24,8 @@ fun main() {
         } else {
             i
         }
+
+
         for (j in 1..(n - c)) {                           //     1
             print("  ")                                         //    212
         }                                                       //   32123
