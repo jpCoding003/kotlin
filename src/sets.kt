@@ -1,7 +1,14 @@
 
 fun main(){
 
-    val names = setOf<String>("Jay","Jay2","Jay3","Jay4")
+    val n =5
+    var a =1
+    for (i in 1..n){
+        for (j in 1 .. i){
+            print(a)
+        }
+        println()
+    }
 
 
 
