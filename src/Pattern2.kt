@@ -43,7 +43,7 @@ fun main(){
 
     for (i in 1..2*n){
 
-        var c  = if(i > n ) {2 * n - i} else {i}
+        val c  = if(i > n ) {2 * n - i} else {i}
         for (j in 1..(n-c)){                           //     1
             print("  ")                                      //    212
         }                                                    //   32123
@@ -56,6 +56,16 @@ fun main(){
         println()
     }
 
+    var b = 1
+    for (i in n downTo 1){
+
+        for (j in 1..i){
+            print(b)
+
+        }
+        b++
+        println()
+    }
 
 
 }
