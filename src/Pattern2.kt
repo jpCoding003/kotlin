@@ -67,5 +67,17 @@ fun main(){
         println()
     }
 
+    for (i in 0..n){
+        for (j in 1..n-i){              //     1
+            print(" ")                        //    1 1
+        }                                     //   1 2 1
+        var num = 1                           //  1 3 3 1
+        for (j in 0..i){                // 1 4 6 4 1
+            print("$num ")                    //1 5 10 10 5 1
+            num = num*(i-j)/(j+1)
+        }
+        println()
+    }
+
 
 }
