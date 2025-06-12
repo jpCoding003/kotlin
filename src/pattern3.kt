@@ -70,4 +70,47 @@ fun main() {
         }
         println()
     }
+
+
+    var a = 'A'
+    for (i in 1..2*n-1) {
+
+        if (i<=n){
+            for (j in n-1 downTo i) {                   //      A
+                print(" ")                                    //     B*B
+            }                                                 //    C***C
+            print(a)                                          //   D*****D
+            for (j in 2..i) {                           //  E*******E
+                print("*")                                    //   D*****D
+            }                                                 //    C***C
+            for (j in 3..i){                            //     B*B
+                print("*")                                    //      A
+            }
+            if (a>'A'){
+                print(a)
+            }
+            a++
+            println()
+        }else{
+            for (j in i-n downTo 1){
+                print(" ")
+            }
+            print(a-2)
+            for (j in 1..2*n-i-1){
+                print("*")
+            }
+            for (j in 2*n-2-i downTo 1){
+                print("*")
+            }
+            if (a-2=='A'){
+
+            }else{
+                print(a-2)
+            }
+            println()
+            a--
+//            print(a)
+//            println()
+        }
+    }
 }
