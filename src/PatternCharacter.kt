@@ -57,37 +57,6 @@ fun main(){
         }
     }
 
-//    val n =4
-//
-//    for (i in 1..n){
-//        var a ='A'
-//        for (j in n downTo i-1){
-//            print(" ")
-//        }
-//        for (j in 1 .. i){
-//            print(a)
-//            a++
-//        }
-//        for (j in 2..i){
-//            print(a)
-//            a--
-//        }
-//        println()
-//    }
 
-
-    for (i in 1 ..2*n ){                         //     1
-        val c  = if(i > n ) {2 * n - i} else {i}       //    121
-        for (j in n downTo c){                   //   12321
-            print(" ")                                 //  1234321
-        }                                              // 123454321
-        for (j in 1..c){                         //  1234321
-            print(j)                                   //   12321
-        }                                              //    121
-        for (k in c-1 downTo 1){                 //     1
-            print(k)
-        }
-        println()
-    }
 
 }
