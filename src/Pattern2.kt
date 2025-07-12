@@ -79,5 +79,15 @@ fun main(){
         println()
     }
 
+    var start= 0
+    for (i in 0..<n){                                    //  1
+        if (i%2 == 0) start = 0 else start = 1              //  0 1
+        for (j in 0..<i){                                //  1 0 1
+            print(start)                                    //  0 1 0 1
+            start = 1-start                                 //  1 0 1 0 1
+        }
+        println()
+    }
+
 
 }

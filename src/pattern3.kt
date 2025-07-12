@@ -71,4 +71,18 @@ fun main() {
         println()
     }
 
+
+    for (i in 1..n){
+        for(j in 1..i){
+            print(i)
+        }
+        for (j in n-i downTo 1){
+            print("  ")
+        }
+        for(j in 1..i){
+            print(i)
+        }
+        println()
+    }
+
 }
