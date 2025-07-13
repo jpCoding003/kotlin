@@ -140,4 +140,61 @@ fun main(){
         println()
     }
 
+    for (i in 1..n){
+        for (j in n downTo i){
+            print("*")
+        }
+        for (j in 2..i ){
+            print("  ")
+        }
+        for (j  in n downTo i){
+            print("*")
+        }
+        println()
+    }
+    for ( i in 1..n){
+        for (j in 1..i){
+            print("*")
+        }
+        for (j in n-1 downTo i){
+            print("  ")
+        }
+        for (j in 1..i){
+            print("*")
+        }
+
+        println()
+    }
+
+
+    // ButterFly Pattern  Two Pattern Combination
+
+    //Reversing the order of the diamond pattern & Make few changes in 2nd pattern
+
+    for ( i in 1..n){
+        for (j in 1..i){
+            print("*")
+        }
+        for (j in n-1 downTo i){
+            print("  ")
+        }
+        for (j in 1..i){
+            print("*")
+        }
+
+        println()
+    }
+    for (i in 1..n){
+        for (j in n downTo i+1){
+            print("*")
+        }
+        for (j in 1..i ){
+            print("  ")
+        }
+        for (j  in n downTo i+1){
+            print("*")
+        }
+        println()
+    }
+
 }

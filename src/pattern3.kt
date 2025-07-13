@@ -2,7 +2,7 @@
 fun main() {
     val n = 5
     for (i in 1..n) {
-        for (j in 1..(n - i)) {              //     1
+        for (j in 1..n-i) {                  //     1
             print("  ")                            //    212
         }                                          //   32123
         for (j in i downTo 1) {              //  4321234
@@ -81,6 +81,32 @@ fun main() {
         }
         for(j in 1..i){
             print(i)
+        }
+        println()
+    }
+
+for (i in 1..n){
+
+    for (j in n downTo i){
+        print(" ")
+    }
+
+    for (j in i downTo 1){
+        print(j)
+    }
+    for (j in 2..i){
+        print(j)
+    }
+    println()
+}
+
+    for (i in 1.. n){
+        for ( j in 1..n){
+            if (i == 1 || i==n || j == 1 || j ==n){
+                print("*")
+            }else{
+                print(" ")
+            }
         }
         println()
     }

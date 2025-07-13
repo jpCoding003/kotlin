@@ -1,3 +1,5 @@
+import kotlin.coroutines.coroutineContext
+
 fun main(){
 
         val n = 5
@@ -55,6 +57,61 @@ fun main(){
 //            print(a)
 //            println()
         }
+    }
+
+    for (i in 1..n){
+        var v = 'A'
+        for (j in 1..i){
+            print(v)
+            v++
+        }
+        println()
+    }
+
+
+    for (i in n downTo 1){
+        var q = 'A'
+        for (j in i downTo 1){
+            print(q)
+            q++
+        }
+        println()
+    }
+    var z = 'A'
+    for (i in 1..n){
+        for (j in 1..i){
+            print(z)
+        }
+        z++
+        println()
+    }
+
+    for (i in 1..n){
+        for (j in n downTo i){
+            print(" ")
+        }
+        var r = 'A'
+        for (j in 1..i){
+            print(r)
+            r++
+        }
+        r--
+        for (j in 2 .. i){
+            r--
+            print(r)
+        }
+        println()
+    }
+
+//    var o = 'E'
+    for (i in 1..n){
+//        var l = o
+//        o--
+        for (j in 'F'-i..'E'){
+            print(j)
+//            l++
+        }
+        println()
     }
 
 
