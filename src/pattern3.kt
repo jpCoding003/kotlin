@@ -1,6 +1,7 @@
+import kotlin.math.min
 
 fun main() {
-    val n = 5
+    var n = 5
     for (i in 1..n) {
         for (j in 1..n-i) {                  //     1
             print("  ")                            //    212
@@ -107,6 +108,19 @@ for (i in 1..n){
             }else{
                 print(" ")
             }
+        }
+        println()
+    }
+
+    n = 4
+    for ( i in 0..<2*n-1){
+        for (j in 0 ..<2*n-1){
+            var top = j
+            var left = i
+            var right = (2*n-1)-1-j
+            var down = (2*n-1)-1-i
+            var min = (n- min(min(top,left),min(right,down)))
+            print(" "+min)
         }
         println()
     }
