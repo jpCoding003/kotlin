@@ -9,8 +9,6 @@ fun main() {
     }
     println(array.contentToString())
 
-
-
     var name = " JAy Patel"
     print(name)
 }
